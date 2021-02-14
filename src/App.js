@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SignInSingUp from "./page/SignInSingUp"
 
+import { ToastContainer } from "react-toastify";
+
 
 export default function App() {
   const [user, setUser] = useState({name:"Mauricio"});
@@ -11,7 +13,20 @@ export default function App() {
 
   ) : (
   <h1>No estas logeado</h1>)
-  }</div>
+  }
+  <ToastContainer 
+  position="top-right"
+  autoClose={5000}
+  hideProgressBar
+  newestOnTop={false}
+  closeOnClick
+  rtl={false}
+  pauseOnVisibilityChange
+  draggable
+  pauseOnHover
+  />
+  
+  </div>
   );
 }
 
