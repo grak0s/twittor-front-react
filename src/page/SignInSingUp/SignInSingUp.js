@@ -23,13 +23,10 @@ export default function SignInSingUp() {
         <Container className= "signin-signup" fluid>
             <Row>
                 <LeftComponent></LeftComponent>
-                <RightComponent openModal={openModal} setShowModel={setShowModal}></RightComponent>
+                <RightComponent openModal={openModal} setShowModal={setShowModal}></RightComponent>
             </Row>
         </Container>
-        <BasicModal 
-            show={showModal}
-            setShow={setShowModal}
-            >
+        <BasicModal show={showModal} setShow={setShowModal} >
                {contentModal}
         </BasicModal>
         </>

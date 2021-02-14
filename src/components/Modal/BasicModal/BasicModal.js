@@ -17,7 +17,7 @@ export default function BasicModal(props) {
             >
            <Modal.Header>
                <Modal.Title>
-                   <img src={LogoWhiteTwittor} alt= "Twitor"></img>
+                   <img src={LogoWhiteTwittor} alt= "Twittor"></img>
                </Modal.Title>
            </Modal.Header>
            <Modal.Body>
